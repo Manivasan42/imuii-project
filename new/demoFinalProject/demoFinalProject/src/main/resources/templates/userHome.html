@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to User</title>
+</head>
+<body>
+<form>
+    <h1>Welcome to User <span th:text="${username}">User</span></h1>
+    <h2>Mail Sent to Everyone</h2>
+<label> From :</label>
+    <input type="text" name="from"><br><br>
+
+    <label> To :</label>
+    <input type="text" name="to"><br><br>
+    <button type="Send">Send</button><br><br>
+    <a href="/logout">Logout</a>
+</form>
+
+</body>
+</html>
